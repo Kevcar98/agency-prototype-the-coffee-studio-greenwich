@@ -3,11 +3,12 @@
 <html class="light" lang="en" style="overflow-y: scroll;"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Greenwich | THE COFFEE STUDIO</title>
+<title>The Coffee Studio - Greenwich</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;700;900&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Public+Sans:wght@400;500&family=Space+Grotesk:wght@700;900&display=swap" rel="stylesheet"/>
 <script id="tailwind-config">
         tailwind.config = {
           darkMode: "class",
@@ -69,9 +70,9 @@
                       "full": "0px"
               },
               "fontFamily": {
-                      "headline": ["Space Grotesk"],
-                      "body": ["Space Grotesk"],
-                      "label": ["Space Grotesk"]
+                      "headline": ["Space Grotesk", "sans-serif"],
+                      "body": ["Public Sans", "sans-serif"],
+                      "label": ["Inter", "sans-serif"]
               }
             },
           }
@@ -120,16 +121,14 @@
 
 
 
-<!-- TopAppBar -->
-
-<main class="pt-20 pt-24">
+<main class="pt-24 min-h-screen">
 <!-- Hero Section -->
 <section class="grid md:grid-cols-12 min-h-[819px] items-stretch">
 <div class="md:col-span-5 flex flex-col justify-center items-start px-10 md:px-20 py-20 bg-surface">
 <span class="font-headline uppercase tracking-[0.2em] text-[12px] font-bold text-tertiary-container mb-4">LOCATION NO. 01</span>
 <h1 class="text-4xl md:text-9xl font-black tracking-tighter leading-none mb-8">GREENWICH</h1>
 <p class="text-xl md:text-2xl font-light max-w-md leading-relaxed mb-10">Discover Quality Coffee — Order Now for pickup or delivery from our original industrial space.</p>
-<button class="bg-primary text-on-primary px-12 py-5 text-sm font-bold uppercase tracking-widest hover:bg-tertiary-container transition-colors duration-300">
+<button class="bg-primary text-white px-12 py-5 text-sm font-bold uppercase tracking-widest hover:bg-tertiary-container transition-colors duration-300">
                     START YOUR ORDER
                 </button>
 </div>
