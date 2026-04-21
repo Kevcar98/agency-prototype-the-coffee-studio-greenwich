@@ -90,8 +90,16 @@
     <a class="text-white hover:text-red-500 transition-colors duration-200" href="battersea.html">BATTERSEA</a>
     <a class="text-white hover:text-red-500 transition-colors duration-200" href="careers.html">CAREERS</a>
   </div>
-  <button class="md:hidden text-white"><span class="material-symbols-outlined">menu</span></button>
+  <button id="mobile-menu-btn" class="md:hidden text-white"><span class="material-symbols-outlined">menu</span></button>
 </nav>
+<div id="mobile-menu" class="md:hidden hidden fixed top-0 left-0 w-full h-full bg-black z-40 flex flex-col pt-20">
+    <a class="text-white hover:text-red-500 transition-colors duration-200 block py-3 px-6 font-headline font-bold uppercase tracking-tighter text-sm" href="index.html">HOME</a>
+    <a class="text-white hover:text-red-500 transition-colors duration-200 block py-3 px-6 font-headline font-bold uppercase tracking-tighter text-sm" href="about.html">ABOUT</a>
+    <a class="text-white hover:text-red-500 transition-colors duration-200 block py-3 px-6 font-headline font-bold uppercase tracking-tighter text-sm" href="coffee.html">COFFEE</a>
+    <a class="text-red-500 border-b-2 border-red-500 pb-1 block py-3 px-6 font-headline font-bold uppercase tracking-tighter text-sm" href="greenwich.html">GREENWICH</a>
+    <a class="text-white hover:text-red-500 transition-colors duration-200 block py-3 px-6 font-headline font-bold uppercase tracking-tighter text-sm" href="battersea.html">BATTERSEA</a>
+    <a class="text-white hover:text-red-500 transition-colors duration-200 block py-3 px-6 font-headline font-bold uppercase tracking-tighter text-sm" href="careers.html">CAREERS</a>
+</div>
 
 
 
@@ -266,4 +274,24 @@
     </div>
   </div>
 </footer>
+<script>
+(function() {
+  var btn = document.getElementById('mobile-menu-btn');
+  var menu = document.getElementById('mobile-menu');
+  var icon = btn ? btn.querySelector('span') : null;
+  if (btn && menu) {
+    btn.addEventListener('click', function() {
+      var isOpen = !menu.classList.contains('hidden');
+      menu.classList.toggle('hidden', isOpen);
+      if (icon) icon.textContent = isOpen ? 'menu' : 'close';
+    });
+    menu.querySelectorAll('a').forEach(function(a) {
+      a.addEventListener('click', function() {
+        menu.classList.add('hidden');
+        if (icon) icon.textContent = 'menu';
+      });
+    });
+  }
+})();
+</script>
 </body></html>
