@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en" style="overflow-y: scroll;"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Shop - The Coffee Studio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700;900&amp;family=Public+Sans:wght@400;500;600&amp;family=Inter:wght@400;500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-surface": "#1a1c1c",
+                        "surface": "#f9f9f9",
+                        "error-container": "#ffdad6",
+                        "outline": "#747878",
+                        "tertiary": "#000000",
+                        "on-error-container": "#93000a",
+                        "surface-container-lowest": "#ffffff",
+                        "on-secondary-container": "#fffbff",
+                        "primary-container": "#1c1b1b",
+                        "surface-bright": "#f9f9f9",
+                        "tertiary-container": "#1b1c1c",
+                        "surface-variant": "#e2e2e2",
+                        "primary": "#000000",
+                        "primary-fixed-dim": "#c8c6c5",
+                        "on-primary": "#ffffff",
+                        "error": "#ba1a1a",
+                        "secondary-fixed-dim": "#ffb3ad",
+                        "on-secondary-fixed-variant": "#930010",
+                        "inverse-on-surface": "#f1f1f1",
+                        "surface-tint": "#5f5e5e",
+                        "on-tertiary-container": "#848483",
+                        "tertiary-fixed-dim": "#c8c6c6",
+                        "on-error": "#ffffff",
+                        "on-tertiary-fixed": "#1b1c1c",
+                        "secondary": "#bb0018",
+                        "outline-variant": "#c4c7c7",
+                        "on-tertiary-fixed-variant": "#474747",
+                        "on-background": "#1a1c1c",
+                        "background": "#f9f9f9",
+                        "surface-container-high": "#e8e8e8",
+                        "inverse-primary": "#c8c6c5",
+                        "on-primary-fixed-variant": "#474646",
+                        "inverse-surface": "#2f3131",
+                        "on-secondary": "#ffffff",
+                        "primary-fixed": "#e5e2e1",
+                        "on-primary-container": "#858383",
+                        "tertiary-fixed": "#e4e2e2",
+                        "surface-container-low": "#f3f3f3",
+                        "surface-dim": "#dadada",
+                        "on-surface-variant": "#444748",
+                        "secondary-fixed": "#ffdad6",
+                        "on-primary-fixed": "#1c1b1b",
+                        "surface-container": "#eeeeee",
+                        "secondary-container": "#e51d28",
+                        "on-tertiary": "#ffffff",
+                        "surface-container-highest": "#e2e2e2",
+                        "on-secondary-fixed": "#410003"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0px",
+                        "lg": "0px",
+                        "xl": "0px",
+                        "full": "0px"
+                    },
+                    "spacing": {},
+                    "fontFamily": {
+                        "headline": ["Space Grotesk", "sans-serif"],
+                        "body": ["Public Sans", "sans-serif"],
+                        "label": ["Inter", "sans-serif"]
+                    }
+                },
+            },
+        }
+    </script>
+
+</head>
+<body class="bg-surface text-on-surface font-body antialiased">
+<nav class="bg-black font-headline font-bold uppercase tracking-tighter border-b border-white/10 fixed top-0 w-full flex justify-between items-center px-8 py-6 z-50">
+  <div class="text-2xl font-black uppercase tracking-tighter text-white"><a href="index.html" class="text-white no-underline">THE COFFEE STUDIO</a></div>
+  <div class="hidden md:flex gap-8 items-center">
+    <a class="text-white hover:text-red-500 transition-colors duration-200" href="index.html">HOME</a>
+    <a class="text-white hover:text-red-500 transition-colors duration-200" href="about.html">ABOUT</a>
+    <a class="text-red-500 border-b-2 border-red-500 pb-1" href="coffee.html">COFFEE</a>
+    <a class="text-white hover:text-red-500 transition-colors duration-200" href="greenwich.html">GREENWICH</a>
+    <a class="text-white hover:text-red-500 transition-colors duration-200" href="battersea.html">BATTERSEA</a>
+    <a class="text-white hover:text-red-500 transition-colors duration-200" href="careers.html">CAREERS</a>
+  </div>
+  <button class="md:hidden text-white"><span class="material-symbols-outlined">menu</span></button>
+</nav>
+
+
+
+<!-- TopNavBar -->
+
+<!-- Main Content -->
+<main class="flex-grow pt-24 pb-24 px-6 md:px-12 w-full max-w-[1600px] mx-auto flex flex-col gap-24">
+<!-- Hero Section -->
+<section class="flex flex-col md:flex-row items-center gap-12 pt-12 pb-12 border-b border-primary border-opacity-20">
+<div class="w-full md:w-1/2 flex flex-col gap-6 pr-0 md:pr-12">
+<h1 class="font-headline text-5xl md:text-7xl lg:text-8xl font-bold uppercase tracking-tighter leading-none text-primary">SHOP</h1>
+<p class="font-body text-xl text-on-surface-variant max-w-lg border-t border-primary pt-6">Premium Coffee Beans &amp; Supplies <br/> Shop Specialty Coffee Online</p>
+</div>
+<div class="w-full md:w-1/2 h-[400px] md:h-[600px] relative bg-surface-variant overflow-hidden group">
+<img alt="Coffee Beans" class="w-full h-full object-cover filter grayscale-0 contrast-125 transition-transform duration-700 group-hover:scale-105" data-alt="industrial coffee roaster pouring freshly roasted dark brown coffee beans into a cooling tray under bright studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCerHfGxzZ-oMjh30cNlV0rAC3sD0O6lp6vp8iosYjvy3CSq2yl2ooj9HbKyTRYhIwVShZ9YtH78UllmjwIHtot3EpuziGV5sQFpqZOEpWMaZa3i7ZTF19MCFPzKReGPoLSOzhpILPU4pYv2wpqjlOVLk9WNm4S1-l3cE9M7j3iQyi0kbQp2Gjvy0A0Dpgta35evobSCedqQ5mgTl0D3YvJO0x0fYHLXjhIJ66sd9oOI6fG2AswueaN2raQrrzp7F5YMKvNF3sVMS_p"/>
+</div>
+</section>
+<!-- Product Grid -->
+<section class="flex flex-col gap-12">
+<div class="flex justify-between items-end border-b border-primary pb-4">
+<h2 class="text-3xl font-headline text-primary">FEATURED ROASTS</h2>
+<span class="font-label text-sm uppercase text-on-surface-variant tracking-widest">05 ITEMS</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Product 1 -->
+<div class="bg-surface-container-lowest flex flex-col group border border-outline-variant/20 hover:border-primary/50 transition-colors">
+<div class="h-80 w-full relative overflow-hidden bg-surface-variant">
+<img alt="The Mount Blend" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="minimalist white coffee bag with black typography sitting on a concrete surface next to scattered whole coffee beans" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBeHILoA8Sh7mvLGnNnLt72xWXK9f3gT7OvkFagbXHTM7jxUR6_MPMgPDkZsf1kmjOOXX78iSO2RQo-6vcgxOjup7z2qEMRzYaGyKAf3GlyRuWCcdIWGW_KdaG-i_jEfHNGCCDBPdfkB4a2CVXnUvn4wz0Czy8g-Nf5nBQRS7fn6S7-EPiDEv9Zz2yYcfDXGwjH-WPzlfB0sFEsBJAkVrfG8V4O3Au9-Mhz6BsnBKGTHTNEdt20Fo2FXFNAgnU5EXi9G2RCxoHVtb8x"/>
+</div>
+<div class="p-6 flex flex-col flex-grow gap-4 border-t border-primary/10">
+<div class="flex justify-between items-start">
+<h3 class="font-headline text-xl text-primary leading-tight">THE MOUNT BLEND</h3>
+<span class="font-headline text-lg text-primary">£14.00</span>
+</div>
+<p class="font-body text-sm text-on-surface-variant flex-grow">Our signature house espresso. Notes of milk chocolate, red berries, and caramel. Smooth and balanced.</p>
+<button class="w-full bg-primary text-white font-headline text-sm py-4 tracking-widest hover:bg-primary-container transition-colors border-t border-transparent mt-4">
+                            ADD TO CART
+                        </button>
+</div>
+</div>
+<!-- Product 2 -->
+<div class="bg-surface-container-lowest flex flex-col group border border-outline-variant/20 hover:border-primary/50 transition-colors">
+<div class="h-80 w-full relative overflow-hidden bg-surface-variant">
+<img alt="Fullsteam Espresso" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="black matte coffee bag with striking typography on a dark textured background with dramatic lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbgu_G9xkrJGbFQN_YQ9GuPy1gciZzBFlG2CtmL0sgjDiRo0ETS1TFpl5VYo42DWLFtJY3Zy6Mvb46H2DSA7TM6Q3ZHVnHU-34HEkY-truPWeVRfG-WrKQNB4WFjTl9X7TwbnsNgZ-g-xCvB4Uz1QJBAIpcBspj7TrP5qzKP7s7Y73WJzfcBvK2clshDs0SBEnKiD9onk_tB7q70Kcd6pwEZ0Brd9o0JlEDP4VEf5eM-qizIWqtBuGzWbo0Y5b6AdAMTyCGxJs5eY7"/>
+</div>
+<div class="p-6 flex flex-col flex-grow gap-4 border-t border-primary/10">
+<div class="flex justify-between items-start">
+<h3 class="font-headline text-xl text-primary leading-tight">FULLSTEAM ESPRESSO</h3>
+<span class="font-headline text-lg text-primary">£15.50</span>
+</div>
+<p class="font-body text-sm text-on-surface-variant flex-grow">A punchy, traditional dark roast. Heavy body with notes of dark cocoa and toasted nuts. Cuts through milk perfectly.</p>
+<button class="w-full bg-primary text-white font-headline text-sm py-4 tracking-widest hover:bg-primary-container transition-colors border-t border-transparent mt-4">
+                            ADD TO CART
+                        </button>
+</div>
+</div>
+<!-- Product 3 -->
+<div class="bg-surface-container-lowest flex flex-col group border border-outline-variant/20 hover:border-primary/50 transition-colors">
+<div class="h-80 w-full relative overflow-hidden bg-surface-variant">
+<img alt="Rise Up Blend" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="kraft paper coffee bag with bright red label resting on a wooden table with morning sunlight streaming across" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCtU30waa2yUUh7Ti468NYdejhtFvcI3TDuEuaLCG1cg-sAhdaDYdA1Yk7JbaZZ7qkFpb-wXQgtzUAehf2TPYQFFMgjw8IRu24Hu4R7IVNJgrSkh2_viUtwglhlDqg8wxNI1kf5OqWxqqoD7X6KKTzDuG4IR48Awykkykc5zTXYxHvpBmzQw4yByYB2h9cP-cZeWEB6Er9dH42vt2vrvMdHgQBJMmXWToueCkBke4Q6TRf2hy8Qu-MyaELDq8g9AM2oBOYNFosh3T8P"/>
+</div>
+<div class="p-6 flex flex-col flex-grow gap-4 border-t border-primary/10">
+<div class="flex justify-between items-start">
+<h3 class="font-headline text-xl text-primary leading-tight">RISE UP BLEND</h3>
+<span class="font-headline text-lg text-primary">£14.50</span>
+</div>
+<p class="font-body text-sm text-on-surface-variant flex-grow">A bright, energetic morning coffee. Zesty acidity with notes of citrus, honey, and floral undertones.</p>
+<button class="w-full bg-primary text-white font-headline text-sm py-4 tracking-widest hover:bg-primary-container transition-colors border-t border-transparent mt-4">
+                            ADD TO CART
+                        </button>
+</div>
+</div>
+<!-- Product 4 -->
+<div class="bg-surface-container-lowest flex flex-col group border border-outline-variant/20 hover:border-primary/50 transition-colors">
+<div class="h-80 w-full relative overflow-hidden bg-primary flex items-center justify-center">
+  <div class="text-center">
+    <span class="material-symbols-outlined text-white/20 text-8xl">coffee</span>
+    <p class="font-headline font-bold uppercase tracking-tighter text-white/40 text-sm mt-4">SOMBRA</p>
+  </div>
+</div>
+<div class="p-6 flex flex-col flex-grow gap-4 border-t border-primary/10">
+<div class="flex justify-between items-start">
+<h3 class="font-headline text-xl text-primary leading-tight">SOMBRA</h3>
+<span class="font-headline text-lg text-primary">£16.00</span>
+</div>
+<p class="font-body text-sm text-on-surface-variant flex-grow">Decaffeinated naturally. Rich and syrupy with notes of malt, dark chocolate, and a hint of spice.</p>
+<button class="w-full bg-primary text-white font-headline text-sm py-4 tracking-widest hover:bg-primary-container transition-colors border-t border-transparent mt-4">
+                            ADD TO CART
+                        </button>
+</div>
+</div>
+<!-- Product 5 -->
+<div class="bg-surface-container-lowest flex flex-col group border border-outline-variant/20 hover:border-primary/50 transition-colors">
+<div class="h-80 w-full relative overflow-hidden bg-primary flex items-center justify-center">
+  <div class="text-center">
+    <span class="material-symbols-outlined text-white/20 text-8xl">coffee</span>
+    <p class="font-headline font-bold uppercase tracking-tighter text-white/40 text-sm mt-4">HERMOSA — COSTA RICA</p>
+  </div>
+</div>
+<div class="p-6 flex flex-col flex-grow gap-4 border-t border-primary/10">
+<div class="flex justify-between items-start">
+<h3 class="font-headline text-xl text-primary leading-tight">HERMOSA - COSTA RICA</h3>
+<span class="font-headline text-lg text-primary">£18.00</span>
+</div>
+<p class="font-body text-sm text-on-surface-variant flex-grow">Single origin filter roast. Complex and clean with notes of green apple, black tea, and brown sugar.</p>
+<button class="w-full bg-primary text-white font-headline text-sm py-4 tracking-widest hover:bg-primary-container transition-colors border-t border-transparent mt-4">
+                            ADD TO CART
+                        </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Partnership Banner -->
+<section class="bg-primary text-white p-12 md:p-24 flex flex-col items-center justify-center text-center border-t border-b border-primary-container">
+<h2 class="font-headline text-2xl md:text-4xl max-w-4xl leading-tight tracking-tight">
+                SOURCED &amp; ROASTED BY VOLCANO COFFEE WORKS — A B-CORP AND CARBON NEUTRAL COMPANY.
+            </h2>
+</section>
+</main>
+<!-- Footer -->
+
+<div class="bg-black text-zinc-600 text-center py-4 text-xs font-label tracking-widest border-t border-white/10 w-full">
+        © 2024 THE COFFEE STUDIO. ALL RIGHTS RESERVED.
+    </div>
+
+<footer class="bg-black text-white border-t border-white/10">
+  <div class="grid grid-cols-1 md:grid-cols-3 px-8 py-16 gap-12 border-b border-white/10">
+    <div>
+      <div class="font-headline text-2xl font-black uppercase tracking-tighter mb-4">THE COFFEE STUDIO</div>
+      <p class="font-body text-white/60 text-sm max-w-xs">Where the coffee elevates the space and the space complements the coffee.</p>
+    </div>
+    <div>
+      <h3 class="font-headline font-bold uppercase tracking-tighter text-white/40 text-xs mb-6">Navigation</h3>
+      <div class="flex flex-col gap-3 font-headline uppercase tracking-tighter text-sm">
+        <a href="index.html" class="text-white/80 hover:text-white transition-colors">Home</a>
+        <a href="about.html" class="text-white/80 hover:text-white transition-colors">About</a>
+        <a href="coffee.html" class="text-white/80 hover:text-white transition-colors">Coffee</a>
+        <a href="greenwich.html" class="text-white/80 hover:text-white transition-colors">Greenwich</a>
+        <a href="battersea.html" class="text-white/80 hover:text-white transition-colors">Battersea</a>
+        <a href="careers.html" class="text-white/80 hover:text-white transition-colors">Careers</a>
+      </div>
+    </div>
+    <div>
+      <h3 class="font-headline font-bold uppercase tracking-tighter text-white/40 text-xs mb-6">Contact</h3>
+      <div class="space-y-3 font-body text-sm text-white/80">
+        <p>44 Creek Road, London SE8 3FN</p>
+        <p>V1 Railway Arches, Patcham Terrace SW8 4FN</p>
+        <p><a href="tel:02081589641" class="hover:text-white transition-colors">0208 158 9641</a></p>
+        <p><a href="mailto:hellogreenwich@thecoffeestudioldn.com" class="hover:text-white transition-colors">hellogreenwich@thecoffeestudioldn.com</a></p>
+        <p><a href="mailto:hellobattersea@thecoffeestudioldn.com" class="hover:text-white transition-colors">hellobattersea@thecoffeestudioldn.com</a></p>
+      </div>
+    </div>
+  </div>
+  <div class="px-8 py-6 flex flex-col md:flex-row items-center justify-between gap-4">
+    <p class="font-label text-white/40 text-xs uppercase tracking-widest">&copy; 2024 The Coffee Studio. All rights reserved.</p>
+    <div class="flex gap-6 font-label text-white/40 text-xs uppercase tracking-widest">
+      <a href="#" class="hover:text-white/80 transition-colors">Instagram</a>
+      <a href="#" class="hover:text-white/80 transition-colors">Privacy</a>
+      <a href="#" class="hover:text-white/80 transition-colors">Terms</a>
+    </div>
+  </div>
+</footer>
+</body></html>

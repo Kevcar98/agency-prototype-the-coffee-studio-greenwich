@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en" style="overflow-y: scroll;"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>THE COFFEE STUDIO</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-primary-fixed": "#ffffff",
+                      "on-tertiary-fixed-variant": "#ffdad6",
+                      "primary": "#000000",
+                      "tertiary-fixed": "#c00019",
+                      "on-tertiary-fixed": "#ffffff",
+                      "primary-container": "#7d000c",
+                      "surface-container-lowest": "#ffffff",
+                      "outline": "#777777",
+                      "tertiary-fixed-dim": "#930010",
+                      "on-tertiary": "#ffdad6",
+                      "primary-fixed": "#c00019",
+                      "on-error": "#ffffff",
+                      "on-secondary-fixed-variant": "#3b3b3b",
+                      "on-error-container": "#410002",
+                      "secondary": "#5e5e5e",
+                      "surface-container-high": "#e8e8e8",
+                      "surface-tint": "#c00019",
+                      "surface-container-low": "#f3f3f3",
+                      "on-tertiary-container": "#ffffff",
+                      "outline-variant": "#c6c6c6",
+                      "on-secondary-fixed": "#1b1b1b",
+                      "secondary-fixed-dim": "#ababab",
+                      "on-primary-fixed-variant": "#ffdad6",
+                      "on-primary": "#ffdad6",
+                      "secondary-fixed": "#c6c6c6",
+                      "on-surface-variant": "#474747",
+                      "surface-variant": "#e2e2e2",
+                      "tertiary-container": "#e51d28",
+                      "surface-dim": "#dadada",
+                      "error-container": "#ffdad6",
+                      "background": "#f9f9f9",
+                      "secondary-container": "#d4d4d4",
+                      "surface": "#f9f9f9",
+                      "surface-bright": "#f9f9f9",
+                      "error": "#ba1a1a",
+                      "on-secondary-container": "#1b1b1b",
+                      "on-background": "#1b1b1b",
+                      "tertiary": "#7d000c",
+                      "primary-fixed-dim": "#930010",
+                      "inverse-on-surface": "#f1f1f1",
+                      "on-secondary": "#ffffff",
+                      "on-primary-container": "#ffffff",
+                      "inverse-surface": "#303030",
+                      "surface-container-highest": "#e2e2e2",
+                      "surface-container": "#eeeeee",
+                      "on-surface": "#1b1b1b",
+                      "inverse-primary": "#ffb3ad"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0px",
+                      "lg": "0px",
+                      "xl": "0px",
+                      "full": "0px"
+              },
+              "spacing": {},
+              "fontFamily": {
+                      "headline": [
+                              "Space Grotesk"
+                      ],
+                      "body": [
+                              "Space Grotesk"
+                      ],
+                      "label": [
+                              "Space Grotesk"
+                      ]
+              }
+      },
+          },
+        }
+    </script>
+
+</head>
+<body class="bg-surface text-on-surface font-body antialiased">
+<nav class="bg-black font-headline font-bold uppercase tracking-tighter border-b border-white/10 fixed top-0 w-full flex justify-between items-center px-8 py-6 z-50">
+  <div class="text-2xl font-black uppercase tracking-tighter text-white"><a href="index.html" class="text-white no-underline">THE COFFEE STUDIO</a></div>
+  <div class="hidden md:flex gap-8 items-center">
+    <a class="text-white hover:text-red-500 transition-colors duration-200" href="index.html">HOME</a>
+    <a class="text-red-500 border-b-2 border-red-500 pb-1" href="about.html">ABOUT</a>
+    <a class="text-white hover:text-red-500 transition-colors duration-200" href="coffee.html">COFFEE</a>
+    <a class="text-white hover:text-red-500 transition-colors duration-200" href="greenwich.html">GREENWICH</a>
+    <a class="text-white hover:text-red-500 transition-colors duration-200" href="battersea.html">BATTERSEA</a>
+    <a class="text-white hover:text-red-500 transition-colors duration-200" href="careers.html">CAREERS</a>
+  </div>
+  <button class="md:hidden text-white"><span class="material-symbols-outlined">menu</span></button>
+</nav>
+
+
+
+<!-- TopAppBar -->
+
+<main class="pt-16 pt-24">
+<!-- Hero Section -->
+<section class="min-h-[921px] flex flex-col md:flex-row w-full max-w-[1440px] mx-auto bg-surface">
+<!-- Content Block -->
+<div class="flex-1 flex flex-col justify-center p-8 md:p-16 lg:p-24 bg-surface z-10">
+<div class="mb-12">
+<span class="text-label-md text-secondary font-bold block mb-4">EST. 2024 / LONDON</span>
+<h1 class="font-headline text-5xl md:text-7xl lg:text-8xl font-bold uppercase tracking-tighter leading-none text-primary mb-8">INTENDED FOR EVERYDAY ROUTINES</h1>
+</div>
+<p class="text-body-lg text-on-surface-variant max-w-md mb-12">
+                    A dedicated space for the pursuit of extraction. We source, roast, and serve specialty coffee with absolute precision.
+                </p>
+<div class="flex gap-4 items-center">
+<a class="bg-tertiary-container text-on-tertiary text-label-md font-bold py-4 px-8 hover:bg-primary-fixed transition-colors duration-75 inline-block text-center border-none cursor-pointer" href="#">
+                        VISIT US
+                    </a>
+</div>
+<!-- Data Point Chips -->
+<div class="mt-16 flex flex-wrap gap-2">
+<div class="bg-secondary-container text-on-secondary-container text-label-sm py-1 px-3 font-bold uppercase tracking-wider text-[0.7rem]">
+                        ROAST: LIGHT
+                    </div>
+<div class="bg-secondary-container text-on-secondary-container text-label-sm py-1 px-3 font-bold uppercase tracking-wider text-[0.7rem]">
+                        ALTITUDE: 1800M
+                    </div>
+<div class="bg-secondary-container text-on-secondary-container text-label-sm py-1 px-3 font-bold uppercase tracking-wider text-[0.7rem]">
+                        PROCESS: WASHED
+                    </div>
+</div>
+</div>
+<!-- Image Block -->
+<div class="flex-1 relative min-h-[512px] md:min-h-full">
+<div class="absolute inset-0 bg-surface-container p-4 md:p-8 pt-0 md:pt-8 pl-0 md:pl-0">
+<div class="w-full h-full relative overflow-hidden bg-surface-container-high">
+<img alt="minimalist commercial espresso machine in a stark concrete studio environment" class="w-full h-full object-cover grayscale-img opacity-90 object-center" data-alt="high-contrast black and white shot of an industrial commercial espresso machine on a concrete counter, sharp angles, minimalist studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAblxeJWNknZejhU25wvlBHlsiG29C9ifunvpNppWeePybjUBYx7SGJ95_OHDWiblOFrCPrVSFp5cVsgDyYehgDdh_kQ9f2iaIWnZoewhmQDNmd1xzU_BMvO4F69aBQw9hYDu79IcjpHAzwSGDeXnUbrdUO7TC6lLe6xh_ZM0oqOGm09L0LBgJHPWWVWlykKcn90WLOEfHtEgbnze5W_7x3OWGEU9KGsRlqBfUQdtsHn3afNgr963zj77_s5uru49-zRH9zQ2qEKA-h"/>
+<!-- Ghost Overlay -->
+<div class="absolute bottom-8 right-8 bg-surface-container-highest backdrop-blur-xl p-6 shadow-[0_40px_60px_-10px_rgba(0,0,0,0.06)] max-w-xs hidden md:block border-l-4 border-tertiary-container">
+<h3 class="text-label-md font-bold text-primary mb-2">CURRENT BATCH</h3>
+<p class="text-body-lg text-on-surface-variant text-sm">Colombian Gesha. Floral notes, crisp acidity. Available now.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- The Network Section -->
+<section class="py-24 px-8 md:px-16 w-full max-w-[1440px] mx-auto bg-surface-container-low">
+<div class="mb-16 flex flex-col md:flex-row md:items-end justify-between border-b-2 border-outline-variant pb-8 ghost-border-bottom">
+<div>
+<h2 class="text-display-lg font-black text-primary text-4xl md:text-5xl">STUDIO NETWORK</h2>
+</div>
+<div class="mt-4 md:mt-0 text-right">
+<span class="text-label-md font-bold text-secondary block">02 LOCATIONS</span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+<!-- Location 1 -->
+<div class="group cursor-pointer">
+<div class="aspect-[4/3] bg-surface overflow-hidden mb-6 relative">
+<img alt="modern minimalist cafe interior with concrete walls" class="w-full h-full object-cover grayscale-img transition-transform duration-500 group-hover:scale-105" data-alt="brutalist architecture interior, empty cafe space with raw concrete walls, metal chairs, high contrast black and white photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCqCaZY5ewljUmizD7Yn23H1YVVNDBRLCZfWTH1-_lSIB4HR3KvA2LxnGFI9ALpitJMO65x4_8ej_e41-aQk_cvhKxpescF_bTSmys0aPoueHqIZlITPpmWAja2lfAWwh2yFGfQpGCprwZVXOjzLATFuh9MJQEny73Q0pqKfNVS3rNQcE_FgoXRTfk1sYeZFmC1rJ_NWvPb6Ux33je3CsUoMvTyfpfv-NbKg-iMgPb4QQKeC2QHixNwGuaTPsUrQeVlqdkgUzFsXgg5"/>
+<div class="absolute top-4 left-4 bg-primary text-on-primary text-[0.6rem] font-bold tracking-widest px-2 py-1">HQ</div>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-headline text-2xl font-bold text-primary mb-2">GREENWICH</h3>
+<p class="text-label-md text-on-surface-variant font-medium">ROASTERY &amp; TASTING ROOM</p>
+</div>
+<span class="material-symbols-outlined text-primary group-hover:text-tertiary-container transition-colors" data-icon="arrow_forward">arrow_forward</span>
+</div>
+</div>
+<!-- Location 2 -->
+<div class="group cursor-pointer">
+<div class="aspect-[4/3] bg-surface overflow-hidden mb-6 relative">
+<img alt="minimalist coffee counter" class="w-full h-full object-cover grayscale-img transition-transform duration-500 group-hover:scale-105" data-alt="sharp geometric shot of a black coffee counter in a bright white space, architectural lines, black and white aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCDGQ-XKCeUL55_rN-lTpk6PahtfcOYN80KqWLOiG03lo3La1U1hZZHA03TCWWXKE2_XbM4KSO_0wiQkONmF1uW6ViUhFweaFiZGbVrwoWCNZ4nkYr18B4-f_pxScJ5fjFazhC4ux7rfhbO644Z77tlRi9260HS51bwxPQHeeoCgDShQrfqs-mKmxAuIykR4eG8ZUjnRTN_PZq9AEAWlC5e0sBjGuhaE3YOfU0yJqWpopJJ8sTVzzRI7r4J49uO24Q_8r9HF_K4uaFk"/>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-headline text-2xl font-bold text-primary mb-2">BATTERSEA</h3>
+<p class="text-label-md text-on-surface-variant font-medium">ESPRESSO BAR</p>
+</div>
+<span class="material-symbols-outlined text-primary group-hover:text-tertiary-container transition-colors" data-icon="arrow_forward">arrow_forward</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Manifesto Block -->
+<section class="py-32 px-8 md:px-16 bg-primary text-on-primary flex justify-center items-center">
+<div class="max-w-4xl text-center">
+<span class="material-symbols-outlined text-tertiary-container text-4xl mb-8 block" data-icon="water_drop" data-weight="fill">water_drop</span>
+<h2 class="text-3xl md:text-5xl font-bold font-headline uppercase leading-tight mb-8">
+                     We reject the compromise. Every extraction is a mechanical dialogue between water, pressure, and structure.
+                 </h2>
+<p class="text-label-md text-on-primary-fixed-variant opacity-80 tracking-[0.2em]">THE MONOGRAPH VOL. 1</p>
+</div>
+</section>
+</main>
+<!-- Footer -->
+
+
+<footer class="bg-black text-white border-t border-white/10">
+  <div class="grid grid-cols-1 md:grid-cols-3 px-8 py-16 gap-12 border-b border-white/10">
+    <div>
+      <div class="font-headline text-2xl font-black uppercase tracking-tighter mb-4">THE COFFEE STUDIO</div>
+      <p class="font-body text-white/60 text-sm max-w-xs">Where the coffee elevates the space and the space complements the coffee.</p>
+    </div>
+    <div>
+      <h3 class="font-headline font-bold uppercase tracking-tighter text-white/40 text-xs mb-6">Navigation</h3>
+      <div class="flex flex-col gap-3 font-headline uppercase tracking-tighter text-sm">
+        <a href="index.html" class="text-white/80 hover:text-white transition-colors">Home</a>
+        <a href="about.html" class="text-white/80 hover:text-white transition-colors">About</a>
+        <a href="coffee.html" class="text-white/80 hover:text-white transition-colors">Coffee</a>
+        <a href="greenwich.html" class="text-white/80 hover:text-white transition-colors">Greenwich</a>
+        <a href="battersea.html" class="text-white/80 hover:text-white transition-colors">Battersea</a>
+        <a href="careers.html" class="text-white/80 hover:text-white transition-colors">Careers</a>
+      </div>
+    </div>
+    <div>
+      <h3 class="font-headline font-bold uppercase tracking-tighter text-white/40 text-xs mb-6">Contact</h3>
+      <div class="space-y-3 font-body text-sm text-white/80">
+        <p>44 Creek Road, London SE8 3FN</p>
+        <p>V1 Railway Arches, Patcham Terrace SW8 4FN</p>
+        <p><a href="tel:02081589641" class="hover:text-white transition-colors">0208 158 9641</a></p>
+        <p><a href="mailto:hellogreenwich@thecoffeestudioldn.com" class="hover:text-white transition-colors">hellogreenwich@thecoffeestudioldn.com</a></p>
+        <p><a href="mailto:hellobattersea@thecoffeestudioldn.com" class="hover:text-white transition-colors">hellobattersea@thecoffeestudioldn.com</a></p>
+      </div>
+    </div>
+  </div>
+  <div class="px-8 py-6 flex flex-col md:flex-row items-center justify-between gap-4">
+    <p class="font-label text-white/40 text-xs uppercase tracking-widest">&copy; 2024 The Coffee Studio. All rights reserved.</p>
+    <div class="flex gap-6 font-label text-white/40 text-xs uppercase tracking-widest">
+      <a href="#" class="hover:text-white/80 transition-colors">Instagram</a>
+      <a href="#" class="hover:text-white/80 transition-colors">Privacy</a>
+      <a href="#" class="hover:text-white/80 transition-colors">Terms</a>
+    </div>
+  </div>
+</footer>
+</body></html>

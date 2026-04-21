@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html class="light" lang="en" style="overflow-y: scroll;">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>The Coffee Studio - Battersea</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Public+Sans:wght@400;500&family=Space+Grotesk:wght@700;900&display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "primary-fixed-dim": "#c8c6c5",
+          "on-background": "#1a1c1c",
+          "tertiary-fixed-dim": "#c8c6c6",
+          "on-primary-fixed-variant": "#474646",
+          "surface-container-lowest": "#ffffff",
+          "surface": "#f9f9f9",
+          "surface-container-high": "#e8e8e8",
+          "surface-container-highest": "#e2e2e2",
+          "tertiary-container": "#1b1c1c",
+          "surface-container": "#eeeeee",
+          "on-tertiary-fixed-variant": "#474747",
+          "on-error": "#ffffff",
+          "error-container": "#ffdad6",
+          "on-tertiary": "#ffffff",
+          "secondary-fixed": "#ffdad6",
+          "on-primary-fixed": "#1c1b1b",
+          "surface-bright": "#f9f9f9",
+          "primary": "#000000",
+          "on-tertiary-fixed": "#1b1c1c",
+          "on-secondary-fixed-variant": "#930010",
+          "error": "#ba1a1a",
+          "surface-dim": "#dadada",
+          "on-error-container": "#93000a",
+          "inverse-on-surface": "#f1f1f1",
+          "surface-variant": "#e2e2e2",
+          "on-secondary-container": "#fffbff",
+          "surface-container-low": "#f3f3f3",
+          "secondary-fixed-dim": "#ffb3ad",
+          "on-tertiary-container": "#848483",
+          "inverse-surface": "#2f3131",
+          "on-primary": "#ffffff",
+          "on-surface": "#1a1c1c",
+          "background": "#f9f9f9",
+          "on-secondary": "#ffffff",
+          "surface-tint": "#5f5e5e",
+          "secondary-container": "#e51d28",
+          "on-primary-container": "#858383",
+          "outline": "#747878",
+          "tertiary-fixed": "#e4e2e2",
+          "tertiary": "#000000",
+          "on-secondary-fixed": "#410003",
+          "primary-container": "#1c1b1b",
+          "on-surface-variant": "#444748",
+          "inverse-primary": "#c8c6c5",
+          "primary-fixed": "#e5e2e1",
+          "outline-variant": "#c4c7c7",
+          "secondary": "#bb0018"
+        },
+        "borderRadius": {
+          "DEFAULT": "0px",
+          "lg": "0px",
+          "xl": "0px",
+          "full": "0px"
+        },
+        "spacing": {},
+        "fontFamily": {
+          "headline": ["Space Grotesk", "sans-serif"],
+          "body": ["Public Sans", "sans-serif"],
+          "label": ["Inter", "sans-serif"]
+        }
+      }
+    }
+  }
+</script>
+</head>
+<body class="bg-surface text-on-surface font-body antialiased">
+<nav class="bg-black font-headline font-bold uppercase tracking-tighter border-b border-white/10 fixed top-0 w-full flex justify-between items-center px-8 py-6 z-50">
+  <div class="text-2xl font-black uppercase tracking-tighter text-white"><a href="index.html" class="text-white no-underline">THE COFFEE STUDIO</a></div>
+  <div class="hidden md:flex gap-8 items-center">
+    <a class="text-white hover:text-red-500 transition-colors duration-200" href="index.html">HOME</a>
+    <a class="text-white hover:text-red-500 transition-colors duration-200" href="about.html">ABOUT</a>
+    <a class="text-white hover:text-red-500 transition-colors duration-200" href="coffee.html">COFFEE</a>
+    <a class="text-white hover:text-red-500 transition-colors duration-200" href="greenwich.html">GREENWICH</a>
+    <a class="text-red-500 border-b-2 border-red-500 pb-1" href="battersea.html">BATTERSEA</a>
+    <a class="text-white hover:text-red-500 transition-colors duration-200" href="careers.html">CAREERS</a>
+  </div>
+  <button class="md:hidden text-white"><span class="material-symbols-outlined">menu</span></button>
+</nav>
+
+
+
+
+
+
+<main class="pt-24 min-h-screen">
+
+  <!-- Hero -->
+  <section class="border-b border-primary">
+    <div class="grid grid-cols-1 lg:grid-cols-2">
+      <div class="px-8 py-16 lg:py-32 flex flex-col items-start justify-center border-b lg:border-b-0 lg:border-r border-primary bg-surface-container-lowest">
+        <div class="inline-flex items-center gap-3 border border-primary px-4 py-2 mb-8 bg-surface">
+          <span class="w-3 h-3 bg-secondary"></span>
+          <span class="font-label text-xs uppercase font-semibold text-primary">Now Open — Battersea</span>
+        </div>
+        <h1 class="font-headline text-6xl md:text-8xl font-bold uppercase tracking-tighter leading-none text-primary mb-8">BATTERSEA</h1>
+        <p class="font-body text-lg text-on-surface-variant max-w-xl mb-10">Order Coffee Today — Visit Battersea. Our railway arch studio beneath the arches of Patcham Terrace.</p>
+        <a href="#location" class="bg-primary text-white font-headline uppercase tracking-tighter px-10 py-5 hover:bg-primary-container transition-colors duration-200 inline-flex items-center gap-3 text-lg">
+          ORDER NOW <span class="material-symbols-outlined">north_east</span>
+        </a>
+      </div>
+      <div class="relative bg-surface-container-high min-h-64 lg:min-h-0 overflow-hidden">
+        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCkcoxXAtoBCXYa8w67HG2peS2iRX_JjaOSG5304-UMXbKu3jZHyV5vZOPsesoSQk3TVs7TOmIwD5-2O_YxRrlfXlrCCD5Z4FyT92WCkNUPD0JnbqiTCXYtf5E2IfpkqwiYiOuAAd8PMrk-G-9MGaDF3TU7rE4bPL8j8DEopeLD54rk7ORvOn5qaMxxghngb0Zaj0kKmfW1ZmGp-WQKI0HX1bbICcQoj_yVEbEIWigQfp7GTTsgynAPIV7eDfSNibW_jUHoBJ2A5APh" alt="The Coffee Studio Battersea interior" class="w-full h-full object-cover"/>
+      </div>
+    </div>
+  </section>
+
+  <!-- Location Details -->
+  <section id="location" class="border-b border-primary">
+    <div class="grid grid-cols-1 lg:grid-cols-3">
+      <!-- Address -->
+      <div class="px-8 py-12 border-b lg:border-b-0 lg:border-r border-primary">
+        <div class="flex items-center gap-3 mb-6">
+          <span class="material-symbols-outlined text-secondary text-3xl">location_on</span>
+          <h2 class="font-headline text-xl font-bold uppercase tracking-tighter">Address</h2>
+        </div>
+        <p class="font-body text-on-surface-variant leading-relaxed mb-2">V1 Railway Arches</p>
+        <p class="font-body text-on-surface-variant leading-relaxed mb-2">Patcham Terrace, Wandsworth</p>
+        <p class="font-body text-on-surface-variant leading-relaxed mb-6">London, SW8 4FN</p>
+        <a href="https://maps.google.com/?q=Patcham+Terrace+Wandsworth+London+SW8+4FN" target="_blank" class="inline-flex items-center gap-2 font-headline uppercase text-sm tracking-tighter border border-primary px-4 py-3 hover:bg-primary hover:text-white transition-colors duration-200">
+          GET DIRECTIONS <span class="material-symbols-outlined text-sm">north_east</span>
+        </a>
+      </div>
+      <!-- Hours -->
+      <div class="px-8 py-12 border-b lg:border-b-0 lg:border-r border-primary">
+        <div class="flex items-center gap-3 mb-6">
+          <span class="material-symbols-outlined text-secondary text-3xl">schedule</span>
+          <h2 class="font-headline text-xl font-bold uppercase tracking-tighter">Opening Hours</h2>
+        </div>
+        <div class="space-y-3 font-body text-on-surface-variant">
+          <div class="flex justify-between border-b border-outline-variant pb-3">
+            <span class="font-semibold text-on-surface">Mon – Sat</span>
+            <span>07:00 – 20:00</span>
+          </div>
+          <div class="flex justify-between">
+            <span class="font-semibold text-on-surface">Sunday</span>
+            <span>10:00 – 17:00</span>
+          </div>
+        </div>
+      </div>
+      <!-- Contact -->
+      <div class="px-8 py-12">
+        <div class="flex items-center gap-3 mb-6">
+          <span class="material-symbols-outlined text-secondary text-3xl">call</span>
+          <h2 class="font-headline text-xl font-bold uppercase tracking-tighter">Contact</h2>
+        </div>
+        <div class="space-y-4 font-body text-on-surface-variant">
+          <div>
+            <p class="font-label text-xs uppercase tracking-widest text-secondary mb-1">Phone</p>
+            <a href="tel:02081589641" class="text-on-surface hover:text-secondary transition-colors font-semibold">0208 158 9641</a>
+          </div>
+          <div>
+            <p class="font-label text-xs uppercase tracking-widest text-secondary mb-1">Email</p>
+            <a href="mailto:hellobattersea@thecoffeestudioldn.com" class="text-on-surface hover:text-secondary transition-colors text-sm font-semibold break-all">hellobattersea@thecoffeestudioldn.com</a>
+          </div>
+          <div class="pt-2">
+            <a href="https://deliveroo.co.uk" target="_blank" class="inline-flex items-center gap-2 bg-secondary text-white font-headline uppercase text-sm tracking-tighter px-4 py-3 hover:bg-secondary-container transition-colors duration-200">
+              ORDER ONLINE <span class="material-symbols-outlined text-sm">open_in_new</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About the Space -->
+  <section class="bg-primary text-white border-b border-white/20 px-8 py-20">
+    <div class="max-w-4xl">
+      <h2 class="font-headline text-4xl md:text-6xl font-bold uppercase tracking-tighter leading-none mb-8">BENEATH THE ARCHES.</h2>
+      <p class="font-body text-lg text-white/80 max-w-2xl mb-4">Nestled within the Victorian railway arches of Patcham Terrace, our Battersea studio is a unique industrial space where precision coffee meets co-working culture.</p>
+      <p class="font-body text-lg text-white/80 max-w-2xl">From first light to golden hour, the arch provides a dramatic frame for the carefully sourced Volcano Coffee Works roasts we serve daily.</p>
+    </div>
+  </section>
+
+  <!-- Other Location CTA -->
+  <section class="border-b border-primary px-8 py-16">
+    <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
+      <div>
+        <h2 class="font-headline text-3xl font-bold uppercase tracking-tighter text-primary mb-2">ALSO VISIT GREENWICH</h2>
+        <p class="font-body text-on-surface-variant">44 Creek Road, London SE8 3FN — Mon–Sat 07:30–20:00</p>
+      </div>
+      <a href="greenwich.html" class="bg-primary text-white font-headline uppercase tracking-tighter px-8 py-4 hover:bg-primary-container transition-colors duration-200 inline-flex items-center gap-2 whitespace-nowrap">
+        GREENWICH STUDIO <span class="material-symbols-outlined">north_east</span>
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<!-- Footer -->
+
+
+
+<footer class="bg-black text-white border-t border-white/10">
+  <div class="grid grid-cols-1 md:grid-cols-3 px-8 py-16 gap-12 border-b border-white/10">
+    <div>
+      <div class="font-headline text-2xl font-black uppercase tracking-tighter mb-4">THE COFFEE STUDIO</div>
+      <p class="font-body text-white/60 text-sm max-w-xs">Where the coffee elevates the space and the space complements the coffee.</p>
+    </div>
+    <div>
+      <h3 class="font-headline font-bold uppercase tracking-tighter text-white/40 text-xs mb-6">Navigation</h3>
+      <div class="flex flex-col gap-3 font-headline uppercase tracking-tighter text-sm">
+        <a href="index.html" class="text-white/80 hover:text-white transition-colors">Home</a>
+        <a href="about.html" class="text-white/80 hover:text-white transition-colors">About</a>
+        <a href="coffee.html" class="text-white/80 hover:text-white transition-colors">Coffee</a>
+        <a href="greenwich.html" class="text-white/80 hover:text-white transition-colors">Greenwich</a>
+        <a href="battersea.html" class="text-white/80 hover:text-white transition-colors">Battersea</a>
+        <a href="careers.html" class="text-white/80 hover:text-white transition-colors">Careers</a>
+      </div>
+    </div>
+    <div>
+      <h3 class="font-headline font-bold uppercase tracking-tighter text-white/40 text-xs mb-6">Contact</h3>
+      <div class="space-y-3 font-body text-sm text-white/80">
+        <p>44 Creek Road, London SE8 3FN</p>
+        <p>V1 Railway Arches, Patcham Terrace SW8 4FN</p>
+        <p><a href="tel:02081589641" class="hover:text-white transition-colors">0208 158 9641</a></p>
+        <p><a href="mailto:hellogreenwich@thecoffeestudioldn.com" class="hover:text-white transition-colors">hellogreenwich@thecoffeestudioldn.com</a></p>
+        <p><a href="mailto:hellobattersea@thecoffeestudioldn.com" class="hover:text-white transition-colors">hellobattersea@thecoffeestudioldn.com</a></p>
+      </div>
+    </div>
+  </div>
+  <div class="px-8 py-6 flex flex-col md:flex-row items-center justify-between gap-4">
+    <p class="font-label text-white/40 text-xs uppercase tracking-widest">&copy; 2024 The Coffee Studio. All rights reserved.</p>
+    <div class="flex gap-6 font-label text-white/40 text-xs uppercase tracking-widest">
+      <a href="#" class="hover:text-white/80 transition-colors">Instagram</a>
+      <a href="#" class="hover:text-white/80 transition-colors">Privacy</a>
+      <a href="#" class="hover:text-white/80 transition-colors">Terms</a>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
