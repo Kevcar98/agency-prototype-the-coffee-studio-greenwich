@@ -27,8 +27,36 @@ function buildNavHtml(currentFile) {
   <div class="hidden md:flex gap-8 items-center">
     ${links}
   </div>
-  <button class="md:hidden text-white"><span class="material-symbols-outlined">menu</span></button>
+  <button id="mobile-menu-btn" class="md:hidden text-white focus:outline-none" aria-label="Open menu"><span class="material-symbols-outlined">menu</span></button>
 </nav>`;
+}
+
+function buildMobileMenuHtml(currentFile) {
+  const links = NAV_LINKS.map(({ label, file }) => {
+    const isActive = file === currentFile;
+    const cls = isActive
+      ? 'text-red-500 border-b border-red-500/30'
+      : 'text-white hover:text-red-500 transition-colors duration-200';
+    return `  <a class="${cls} block py-4 px-8 font-headline font-bold uppercase tracking-tighter text-lg border-b border-white/10" href="${file}">${label}</a>`;
+  }).join('\n');
+
+  return `<div id="mobile-menu" class="hidden fixed inset-0 bg-black z-40 flex-col pt-20 overflow-y-auto">
+  <div class="flex justify-end px-6 py-4">
+    <button id="mobile-menu-close" class="text-white focus:outline-none" aria-label="Close menu"><span class="material-symbols-outlined text-3xl">close</span></button>
+  </div>
+${links}
+</div>
+<script>
+(function () {
+  var btn = document.getElementById('mobile-menu-btn');
+  var menu = document.getElementById('mobile-menu');
+  var close = document.getElementById('mobile-menu-close');
+  function openMenu() { menu.classList.remove('hidden'); menu.classList.add('flex'); document.body.style.overflow = 'hidden'; }
+  function closeMenu() { menu.classList.add('hidden'); menu.classList.remove('flex'); document.body.style.overflow = ''; }
+  if (btn) btn.addEventListener('click', openMenu);
+  if (close) close.addEventListener('click', closeMenu);
+})();
+</script>`
 }
 
 const MATERIAL_SYMBOLS_LINK = '<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>';
@@ -103,8 +131,14 @@ pages.forEach(filename => {
     return `<html${attrs} style="overflow-y: scroll;">`;
   });
 
-  // 5. Inject canonical nav immediately after <body>
-  html = html.replace(/(<body[^>]*>)/i, `$1\n${buildNavHtml(filename)}`);
+  // 5. Strip stale mobile-menu div (only contains <a> tags, no nested divs)
+  html = html.replace(/<div[^>]+id="mobile-menu"[^>]*>[\s\S]*?<\/div>/i, '');
+
+  // Strip any leftover inline mobile-menu toggle scripts
+  html = html.replace(/<script>\s*\(function\s*\(\s*\)\s*\{[\s\S]*?mobile-menu[\s\S]*?\}\)\(\s*\);\s*<\/script>/gi, '');
+
+  // 6. Inject canonical nav + mobile menu immediately after <body>
+  html = html.replace(/(<body[^>]*>)/i, `$1\n${buildNavHtml(filename)}\n${buildMobileMenuHtml(filename)}`);
 
   // 6. Replace all inline arbitrary font references with semantic aliases
   html = html.replace(/font-\['Space_Grotesk'\]/g, 'font-headline');
