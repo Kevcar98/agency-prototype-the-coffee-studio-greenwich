@@ -23,7 +23,7 @@ function buildNavHtml(currentFile) {
   }).join('\n    ');
 
   return `<nav class="bg-black font-headline font-bold uppercase tracking-tighter border-b border-white/10 fixed top-0 w-full flex justify-between items-center px-8 py-6 z-50">
-  <div class="text-2xl font-black uppercase tracking-tighter text-white"><a href="index.html" class="text-white no-underline">THE COFFEE STUDIO</a></div>
+  <div class="text-lg sm:text-2xl font-black uppercase tracking-tighter text-white"><a href="index.html" class="text-white no-underline">THE COFFEE STUDIO</a></div>
   <div class="hidden md:flex gap-8 items-center">
     ${links}
   </div>
@@ -56,8 +56,8 @@ const CANONICAL_FOOTER = `<footer class="bg-black text-white border-t border-whi
         <p>44 Creek Road, London SE8 3FN</p>
         <p>V1 Railway Arches, Patcham Terrace SW8 4FN</p>
         <p><a href="tel:02081589641" class="hover:text-white transition-colors">0208 158 9641</a></p>
-        <p><a href="mailto:hellogreenwich@thecoffeestudioldn.com" class="hover:text-white transition-colors">hellogreenwich@thecoffeestudioldn.com</a></p>
-        <p><a href="mailto:hellobattersea@thecoffeestudioldn.com" class="hover:text-white transition-colors">hellobattersea@thecoffeestudioldn.com</a></p>
+        <p><a href="mailto:hellogreenwich@thecoffeestudioldn.com" class="hover:text-white transition-colors break-all">hellogreenwich@thecoffeestudioldn.com</a></p>
+        <p><a href="mailto:hellobattersea@thecoffeestudioldn.com" class="hover:text-white transition-colors break-all">hellobattersea@thecoffeestudioldn.com</a></p>
       </div>
     </div>
   </div>
@@ -71,7 +71,7 @@ const CANONICAL_FOOTER = `<footer class="bg-black text-white border-t border-whi
   </div>
 </footer>`;
 
-const CANONICAL_BODY_CLASS = 'bg-surface text-on-surface font-body antialiased';
+const CANONICAL_BODY_CLASS = 'bg-surface text-on-surface font-body antialiased overflow-x-hidden';
 
 pages.forEach(filename => {
   const filepath = path.join(dir, filename);
@@ -153,6 +153,17 @@ pages.forEach(filename => {
       }
     );
   }
+
+  // 13. Mobile text-size normalization — downsize bare (unprefixed) large headings.
+  //     Lookbehind `(?<![a-z\d]:)` skips md:/lg: prefixed variants so they keep their values.
+  html = html.replace(/(?<![a-z\d]:)\btext-8xl\b/g, 'text-4xl');
+  html = html.replace(/(?<![a-z\d]:)\btext-7xl\b/g, 'text-4xl');
+  html = html.replace(/(?<![a-z\d]:)\btext-6xl\b/g, 'text-3xl');
+  html = html.replace(/(?<![a-z\d]:)\btext-5xl\b/g, 'text-3xl');
+
+  // 14. Mobile padding normalization — replace bare large padding with responsive equivalents.
+  html = html.replace(/(?<![a-z\d]:)\bp-12\b/g, 'p-6 md:p-12');
+  html = html.replace(/(?<![a-z\d]:)\bp-24\b/g, 'p-10 md:p-24');
 
   fs.writeFileSync(filepath, html, 'utf8');
   console.log(`OK: ${filename}`);

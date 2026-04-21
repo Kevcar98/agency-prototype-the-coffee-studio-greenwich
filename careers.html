@@ -80,9 +80,9 @@
   }
 </script>
 </head>
-<body class="bg-surface text-on-surface font-body antialiased">
+<body class="bg-surface text-on-surface font-body antialiased overflow-x-hidden">
 <nav class="bg-black font-headline font-bold uppercase tracking-tighter border-b border-white/10 fixed top-0 w-full flex justify-between items-center px-8 py-6 z-50">
-  <div class="text-2xl font-black uppercase tracking-tighter text-white"><a href="index.html" class="text-white no-underline">THE COFFEE STUDIO</a></div>
+  <div class="text-lg sm:text-2xl font-black uppercase tracking-tighter text-white"><a href="index.html" class="text-white no-underline">THE COFFEE STUDIO</a></div>
   <div class="hidden md:flex gap-8 items-center">
     <a class="text-white hover:text-red-500 transition-colors duration-200" href="index.html">HOME</a>
     <a class="text-white hover:text-red-500 transition-colors duration-200" href="about.html">ABOUT</a>
@@ -91,8 +91,9 @@
     <a class="text-white hover:text-red-500 transition-colors duration-200" href="battersea.html">BATTERSEA</a>
     <a class="text-red-500 border-b-2 border-red-500 pb-1" href="careers.html">CAREERS</a>
   </div>
-  <button id="mobile-menu-btn" class="md:hidden text-white"><span class="material-symbols-outlined">menu</span></button>
+  <button class="md:hidden text-white"><span class="material-symbols-outlined">menu</span></button>
 </nav>
+
 <div id="mobile-menu" class="md:hidden hidden fixed top-0 left-0 w-full h-full bg-black z-40 flex flex-col pt-20">
     <a class="text-white hover:text-red-500 transition-colors duration-200 block py-3 px-6 font-headline font-bold uppercase tracking-tighter text-sm" href="index.html">HOME</a>
     <a class="text-white hover:text-red-500 transition-colors duration-200 block py-3 px-6 font-headline font-bold uppercase tracking-tighter text-sm" href="about.html">ABOUT</a>
@@ -228,6 +229,27 @@
 
 
 
+
+<script>
+(function() {
+  var btn = document.getElementById('mobile-menu-btn');
+  var menu = document.getElementById('mobile-menu');
+  var icon = btn ? btn.querySelector('span') : null;
+  if (btn && menu) {
+    btn.addEventListener('click', function() {
+      var isOpen = !menu.classList.contains('hidden');
+      menu.classList.toggle('hidden', isOpen);
+      if (icon) icon.textContent = isOpen ? 'menu' : 'close';
+    });
+    menu.querySelectorAll('a').forEach(function(a) {
+      a.addEventListener('click', function() {
+        menu.classList.add('hidden');
+        if (icon) icon.textContent = 'menu';
+      });
+    });
+  }
+})();
+</script>
 <footer class="bg-black text-white border-t border-white/10">
   <div class="grid grid-cols-1 md:grid-cols-3 px-8 py-16 gap-12 border-b border-white/10">
     <div>
@@ -251,8 +273,8 @@
         <p>44 Creek Road, London SE8 3FN</p>
         <p>V1 Railway Arches, Patcham Terrace SW8 4FN</p>
         <p><a href="tel:02081589641" class="hover:text-white transition-colors">0208 158 9641</a></p>
-        <p><a href="mailto:hellogreenwich@thecoffeestudioldn.com" class="hover:text-white transition-colors">hellogreenwich@thecoffeestudioldn.com</a></p>
-        <p><a href="mailto:hellobattersea@thecoffeestudioldn.com" class="hover:text-white transition-colors">hellobattersea@thecoffeestudioldn.com</a></p>
+        <p><a href="mailto:hellogreenwich@thecoffeestudioldn.com" class="hover:text-white transition-colors break-all">hellogreenwich@thecoffeestudioldn.com</a></p>
+        <p><a href="mailto:hellobattersea@thecoffeestudioldn.com" class="hover:text-white transition-colors break-all">hellobattersea@thecoffeestudioldn.com</a></p>
       </div>
     </div>
   </div>
@@ -265,25 +287,5 @@
     </div>
   </div>
 </footer>
-<script>
-(function() {
-  var btn = document.getElementById('mobile-menu-btn');
-  var menu = document.getElementById('mobile-menu');
-  var icon = btn ? btn.querySelector('span') : null;
-  if (btn && menu) {
-    btn.addEventListener('click', function() {
-      var isOpen = !menu.classList.contains('hidden');
-      menu.classList.toggle('hidden', isOpen);
-      if (icon) icon.textContent = isOpen ? 'menu' : 'close';
-    });
-    menu.querySelectorAll('a').forEach(function(a) {
-      a.addEventListener('click', function() {
-        menu.classList.add('hidden');
-        if (icon) icon.textContent = 'menu';
-      });
-    });
-  }
-})();
-</script>
 </body>
 </html>
