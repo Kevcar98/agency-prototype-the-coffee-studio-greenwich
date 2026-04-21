@@ -140,60 +140,60 @@
 </div>
 </section>
 <!-- Location Details Section -->
-<section class="bg-surface-container-low px-10 md:px-20 py-32">
-<div class="grid md:grid-cols-3 gap-20">
-<!-- Address & Contact -->
-<div class="space-y-12">
-<div>
-<h3 class="font-headline uppercase tracking-widest text-[11px] font-black text-primary mb-6">THE ADDRESS</h3>
-<p class="text-2xl font-bold tracking-tight">44 Creek Road,<br/>London SE8 3FN</p>
-</div>
-<div class="space-y-4">
-<h3 class="font-headline uppercase tracking-widest text-[11px] font-black text-primary mb-6">CONTACT</h3>
-<div class="flex items-center gap-4">
-<span class="material-symbols-outlined text-sm">call</span>
-<p class="text-lg font-medium">0208 158 9641</p>
-</div>
-<div class="flex items-center gap-4">
-<span class="material-symbols-outlined text-sm">mail</span>
-<p class="text-lg font-medium">hellogreenwich@thecoffeestudioldn.com</p>
-</div>
-</div>
-</div>
-<!-- Hours -->
-<div class="border-l-0 md:border-l-2 border-outline-variant md:pl-20">
-<h3 class="font-headline uppercase tracking-widest text-[11px] font-black text-primary mb-8">SERVICE HOURS</h3>
-<div class="space-y-6">
-<div class="flex justify-between items-baseline border-b border-outline-variant pb-2">
-<span class="font-headline uppercase text-[10px] tracking-widest">MON — SAT</span>
-<span class="font-bold">07:30 — 20:00</span>
-</div>
-<div class="flex justify-between items-baseline border-b border-outline-variant pb-2">
-<span class="font-headline uppercase text-[10px] tracking-widest">SUNDAY</span>
-<span class="font-bold">10:00 — 17:00</span>
-</div>
-</div>
-<div class="mt-12 bg-white p-8">
-<p class="text-sm font-light italic mb-6 leading-relaxed">"A technical approach to the morning ritual. Precision roasts served in a structural environment."</p>
-<div class="flex items-center gap-2">
-<div class="h-px w-8 bg-primary"></div>
-<span class="text-[10px] font-black uppercase tracking-widest">Studio Notes</span>
-</div>
-</div>
-</div>
-<!-- Primary Action -->
-<div class="flex flex-col justify-center items-center md:items-end">
-<div class="w-full h-full bg-white flex flex-col justify-between p-10">
-<div>
-<h2 class="text-4xl font-black tracking-tighter mb-4 uppercase">READY TO BREW?</h2>
-<p class="text-sm font-light opacity-70 mb-10">Skip the queue. Our digital ordering system is optimized for speed and accuracy.</p>
-</div>
-<button class="w-full bg-tertiary-container text-white py-8 text-lg font-black uppercase tracking-[0.2em] hover:bg-black transition-colors duration-300">
-                            ORDER NOW
-                        </button>
-</div>
-</div>
-</div>
+<section id="location" class="border-b border-primary">
+  <div class="grid grid-cols-1 lg:grid-cols-3">
+    <!-- Address -->
+    <div class="px-8 py-12 border-b lg:border-b-0 lg:border-r border-primary">
+      <div class="flex items-center gap-3 mb-6">
+        <span class="material-symbols-outlined text-tertiary-container text-3xl">location_on</span>
+        <h2 class="font-headline text-xl font-bold uppercase tracking-tighter">Address</h2>
+      </div>
+      <p class="font-body text-on-surface-variant leading-relaxed mb-2">44 Creek Road</p>
+      <p class="font-body text-on-surface-variant leading-relaxed mb-6">London, SE8 3FN</p>
+      <a href="https://maps.google.com/?q=44+Creek+Road+London+SE8+3FN" target="_blank" class="inline-flex items-center gap-2 font-headline uppercase text-sm tracking-tighter border border-primary px-4 py-3 hover:bg-primary hover:text-white transition-colors duration-200">
+        GET DIRECTIONS <span class="material-symbols-outlined text-sm">north_east</span>
+      </a>
+    </div>
+    <!-- Hours -->
+    <div class="px-8 py-12 border-b lg:border-b-0 lg:border-r border-primary">
+      <div class="flex items-center gap-3 mb-6">
+        <span class="material-symbols-outlined text-tertiary-container text-3xl">schedule</span>
+        <h2 class="font-headline text-xl font-bold uppercase tracking-tighter">Opening Hours</h2>
+      </div>
+      <div class="space-y-3 font-body text-on-surface-variant">
+        <div class="flex justify-between border-b border-outline-variant pb-3">
+          <span class="font-semibold text-on-surface">Mon – Sat</span>
+          <span>07:30 – 20:00</span>
+        </div>
+        <div class="flex justify-between">
+          <span class="font-semibold text-on-surface">Sunday</span>
+          <span>10:00 – 17:00</span>
+        </div>
+      </div>
+    </div>
+    <!-- Contact -->
+    <div class="px-8 py-12">
+      <div class="flex items-center gap-3 mb-6">
+        <span class="material-symbols-outlined text-tertiary-container text-3xl">call</span>
+        <h2 class="font-headline text-xl font-bold uppercase tracking-tighter">Contact</h2>
+      </div>
+      <div class="space-y-4 font-body text-on-surface-variant">
+        <div>
+          <p class="font-label text-xs uppercase tracking-widest text-tertiary-container mb-1">Phone</p>
+          <a href="tel:02081589641" class="text-on-surface hover:text-tertiary-container transition-colors font-semibold">0208 158 9641</a>
+        </div>
+        <div>
+          <p class="font-label text-xs uppercase tracking-widest text-tertiary-container mb-1">Email</p>
+          <a href="mailto:hellogreenwich@thecoffeestudioldn.com" class="text-on-surface hover:text-tertiary-container transition-colors text-sm font-semibold break-all">hellogreenwich@thecoffeestudioldn.com</a>
+        </div>
+        <div class="pt-2">
+          <a href="https://deliveroo.co.uk" target="_blank" class="inline-flex items-center gap-2 bg-tertiary-container text-white font-headline uppercase text-sm tracking-tighter px-4 py-3 hover:bg-black transition-colors duration-200">
+            ORDER ONLINE <span class="material-symbols-outlined text-sm">open_in_new</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 <!-- Map Section -->
 <section class="h-[600px] w-full relative bg-surface-container-highest">
